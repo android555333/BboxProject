@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/colorTheme"
+    android:weightSum="1">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_weight="0.24"
+            app:srcCompat="@drawable/main_logo" />
+
+        <TextView
+            android:id="@+id/editText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/imageView"
+            android:layout_alignParentStart="true"
+            android:layout_marginBottom="10dp"
+            android:layout_weight="0.24"
+            android:ems="10"
+            android:fontFamily="sans-serif"
+            android:text="bobobox"
+            android:textAlignment="center"
+            android:textColor="@color/colorTextPrimary"
+            android:textSize="50sp" />
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/imageView"
+            android:layout_alignParentStart="true"
+            android:layout_marginBottom="0dp"
+            android:text="Rest Anytime Anywhere"
+            android:textAlignment="center"
+            android:textColor="@color/colorTextPrimary" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:layout_weight="0.74">
+        <!--android:backgroundTint="@color/colorSignIn"-->
+        <Button
+            android:id="@+id/btnToSignIn"
+            android:layout_width="300dp"
+            android:layout_height="50dp"
+            android:background="@drawable/border_radius"
+            android:backgroundTint="@color/colorBtn"
+            android:text="Sign In"
+            android:textAlignment="center"
+            android:inputType = "textCapCharacters"
+            android:textColor="@color/colorTextPrimary" />
+
+
+        <!--android:backgroundTint="@color/colorSignUp"-->
+        <Button
+            android:id="@+id/btnToSignUp"
+            android:layout_width="300dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/border_radius"
+            android:text="Sign Up"
+            android:backgroundTint="@color/colorBtn2"
+            android:textAlignment="center"
+            android:inputType = "textCapCharacters"
+            android:textColor="@color/colorTextPrimary" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="105dp"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/btnSignInFacebook"
+            android:layout_width="145dp"
+            android:layout_height="50dp"
+            android:layout_marginRight="10dp"
+            android:background="@drawable/border_radius_blue"
+            android:backgroundTint="@color/colorFacebook"
+            android:text="Facebook"
+            android:textAlignment="center"
+            android:inputType = "textCapCharacters"
+            android:textColor="@color/colorTextPrimary" />
+
+        <Button
+            android:id="@+id/btnSignInGmail"
+            android:layout_width="145dp"
+            android:layout_height="50dp"
+            android:background="@drawable/border_radius_white"
+            android:backgroundTint="@color/colorBackgroundW"
+            android:text="Gmail"
+            android:inputType = "textCapCharacters"
+            android:textAlignment="center"/>
+    </LinearLayout>
+</LinearLayout>
